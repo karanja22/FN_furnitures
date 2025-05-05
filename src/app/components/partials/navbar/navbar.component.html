@@ -15,13 +15,15 @@
           </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-          <a href="#" class="text-sm/6 font-semibold text-white">Home</a>
-          <a href="#" class="text-sm/6 font-semibold text-white">Products</a>
-          <a href="#" class="text-sm/6 font-semibold text-white">Order</a>
-          <a href="#" class="text-sm/6 font-semibold text-white">About Us</a>
-          <a href="#" class="text-sm/6 font-semibold text-white">Contact Us</a>
+          <a routerLink="/" class="text-sm/6 font-semibold text-white">Home</a>
+          <a routerLink="/products" class="text-sm/6 font-semibold text-white">Products</a>
+          <a routerLink="/orders" class="text-sm/6 font-semibold text-white">Orders</a>
+          <a routerLink="/about" class="text-sm/6 font-semibold text-white">About Us</a>
+          <a routerLink="/contact" class="text-sm/6 font-semibold text-white">Contact Us</a>
         </div>
       </nav>
+
+
       <!-- Mobile menu, show/hide based on menu open state. -->
       <div class="lg:hidden" role="dialog" aria-modal="true">
         <!-- Background backdrop, show/hide based on slide-over state. -->

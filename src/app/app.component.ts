@@ -1,13 +1,11 @@
-import { Component, importProvidersFrom } from '@angular/core';
-import { HeroComponent } from './components/hero/hero.component';
-import { NavbarComponent } from './components/partials/navbar/navbar.component';
-import { FooterComponent } from './components/partials/footer/footer.component';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [NavbarComponent, HeroComponent, FooterComponent],
+  imports: [RouterOutlet],
   providers: [],
   standalone: true,
   templateUrl: './app.component.html',
