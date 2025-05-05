@@ -1,0 +1,124 @@
+<div class="space-y-12 p-12 bg-[#F8F1EB]">
+
+  <div class="border-b border-gray-900/10 px-10">
+    <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">Order Form</h1>
+    <p class="mt-6 text-base/7 font-semibold text-gray-900">Fill in the form below to place your order.</p>
+
+    <form class=" bg-[#B68D6A] shadow-md rounded-xl p-8 space-y-6 max-w-5xl mx-auto">
+      <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight mb-8">Order Details</h2>
+      <p class="text-base/7 font-semibold text-gray-900">Use a permanent address where you can receive mail.</p>
+
+      <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 px-20">
+        <div class="sm:col-span-3">
+          <label for="first-name" class="block text-sm/6 font-medium text-gray-900">First name</label>
+          <div class="mt-2">
+            <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+              class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#B68D6A] sm:text-sm/6">
+          </div>
+        </div>
+
+        <div class="sm:col-span-3">
+          <label for="last-name" class="block text-sm/6 font-medium text-gray-900">Last name</label>
+          <div class="mt-2">
+            <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+              class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#B68D6A] sm:text-sm/6">
+          </div>
+        </div>
+
+        <div class="sm:col-span-3">
+          <label for="email" class="block text-sm/6 font-medium text-gray-900">Email address</label>
+          <div class="mt-2">
+            <input id="email" name="email" type="email" autocomplete="email"
+              class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#B68D6A] sm:text-sm/6">
+          </div>
+        </div>
+
+        <div class="sm:col-span-3">
+          <label for="Telephone" class="block text-sm/6 font-medium text-gray-900">Phone Number</label>
+          <div class="mt-2">
+            <input id="Telephone" name="Telephone" type="number" autocomplete="Telephone"
+              class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#B68D6A] sm:text-sm/6">
+          </div>
+        </div>
+
+        <div class="sm:col-span-3">
+          <label for="City/Town" class="block text-sm/6 font-medium text-gray-900">City/Town</label>
+          <div class="mt-2 grid grid-cols-1">
+            <select id="City/Town" name="City/Town" autocomplete="City/Town"
+              class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#B68D6A] sm:text-sm/6">
+              <option>Kisumu</option>
+              <option>Kakamega</option>
+              <option>Homabay</option>
+              <option>Eldoret</option>
+              <option>Bungoma</option>
+            </select>
+            <svg
+              class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4"
+              viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+              <path fill-rule="evenodd"
+                d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="sm:col-span-3">
+          <label for="street-address" class="block text-sm/6 font-medium text-gray-900">Street address</label>
+          <div class="mt-2">
+            <input type="text" name="street-address" id="street-address" autocomplete="street-address"
+              class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#B68D6A] sm:text-sm/6">
+          </div>
+        </div>
+
+
+        <div class="col-span-full">
+          <label for="Products" class="block text-sm/6 font-medium text-gray-900">Products</label>
+          <div class="mt-2 grid grid-cols-1">
+            <select id="Products" name="Products" autocomplete="Products"
+              class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pr-8 pl-3 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-[#B68D6A] sm:text-sm/6">
+              <option>Office Seats</option>
+              <option>Round table with seats</option>
+              <option>Office Desk</option>
+              <option>Executive Chairs</option>
+              <option>Reception Counter</option>
+              <option>Office Cabinets</option>
+              <option>Cafeteria Chairs</option>
+              <option>Lounge Sofa</option>
+              <option>Sofa Set</option>
+              <option>2-Seater Sofa</option>
+              <option>Dining Set</option>
+              <option>Kingsize Bed</option>
+              <option>Bed-side Table</option>
+              <option>Drawers</option>
+              <option>Study Desk</option>
+              <option>Mid-century Modern Accent Chair</option>
+              <option>Wooden Doors and Windows</option>
+            </select>
+            <svg
+              class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4"
+              viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+              <path fill-rule="evenodd"
+                d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="col-span-full">
+          <label class="block text-sm/6 font-medium text-gray-900">Additional Information</label>
+          <textarea name="message" rows="5"
+            class="mt-1 w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#B68D6A]"
+            required></textarea>
+        </div>
+
+      </div>
+
+
+      <div class="mt-6 flex items-center justify-end gap-x-6 px-20">
+        <button type="button"
+          class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-red-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Cancel</button>
+        <button type="submit"
+          class="rounded-md bg-green-700 px-3 py-2 text-sm font-semibold text-white shadow-xs hover:bg-[#B68D6A] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4B3621]">Send</button>
+      </div>
+    </form>
+  </div>
