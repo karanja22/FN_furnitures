@@ -1,11 +1,14 @@
+import { config } from 'dotenv';
+config(); 
+console.log('DATABASE_URL =', process.env.DATABASE_URL);  
+
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import { config } from 'dotenv';
-
-config(); 
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create(AppModule,{
+    logger: ['error', 'warn', 'log', 'debug', 'verbose'],
+  });
   await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();
