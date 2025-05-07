@@ -27,7 +27,13 @@ export class ProductsController {
   findOne(@Param('id') id: number): Promise<Product> {
     return this.productsService.findOne(id);
   }
-
+@Get('category/:type')
+findByCategory(@Param('type') type: string): Promise<Product[]> {
+  if (type !== 'home' && type !== 'office') {
+    throw new InternalServerErrorException(`Invalid category type: ${type}`);
+  }
+  return this.productsService.findByCategory(type as 'home' | 'office');
+}
   @Put(':id')
   update(@Param('id') id: number, @Body() updateProductDto: Partial<Product>): Promise<Product> {
     return this.productsService.update(id, updateProductDto);
